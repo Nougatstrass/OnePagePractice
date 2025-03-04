@@ -38,7 +38,7 @@ main section {
     margin-bottom: 50px;
 } */
 
-#intro, #about {
+#intro, #about, #commitment, #team {
     width: 1100px;
 }
 
@@ -96,6 +96,11 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+.orange-button:hover {
+    background-color: white;
+    color: #EE4836;
+}
+
 #down-arrow {
     vertical-align: middle;
 }
@@ -105,8 +110,14 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+.blue-button:hover {
+    background-color: white;
+    color: #3075B6;
+}
+
 p {
     line-height: 1.5;
+    margin-top: 0;
 }
 
 .sans-serif-18 {
@@ -128,6 +139,11 @@ p {
     font-size: 15px;
 }
 
+.sans-serif-16 {
+    font-family: 'Manjari', sans-serif;
+    font-size: 16px;
+}
+
 .sans-serif-26 {
     font-family: 'Manjari', sans-serif;
     font-size: 26px;
@@ -142,7 +158,7 @@ p {
     justify-content: space-between;
 }
 
-.row div {
+#intro .row div, #about .row div, #commitment .row div {
     width: 48%;
 }
 
@@ -155,6 +171,10 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#about-left-column {
+    align-items: flex-start;
 }
 
 a {
@@ -193,7 +213,7 @@ a {
 
 #opinion-cards div {
     width: 20%;
-    padding: 0 20px 0 20px;
+    padding: 15px 20px 0 20px;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -253,6 +273,11 @@ a {
     color: black;
 }
 
+.yellow-button:hover {
+    background-color: white;
+    color: #FCBB5B;
+}
+
 #multi-colored-line {
     width: 100%;
     margin-top: 80px;
@@ -287,6 +312,21 @@ a {
     background-color: #3075B6;
     height: 15px;
     width: 20%;
+}
+
+#team {
+    max-width: 1200px;
+}
+
+.team-portrait-column {
+    width: 30%;
+}
+
+.team-text-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer {
